@@ -1,0 +1,9 @@
+my_number="2964732847" #如果变量名后面有引号，那么是字符串，如果是没有引号，那么则是整数
+print("my_number"+my_number)
+my_ex=my_number #要更改号码时候，最好将原来的号码进行保存
+my_number="hahha"
+print("my_ex"+my_ex)
+print("my_number"+my_number) #等价于print("my_number"+"hahha")
+
+#给变量取名字有硬性规则，只有数字，下划线，字母，不能由数字开头，字母全部小写，下划线连接，不要占用关键字
+#当然了，占用关键字肯定是会报错的
