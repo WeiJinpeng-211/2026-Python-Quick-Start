@@ -1,0 +1,14 @@
+#对字符串求长度
+a="hello world!"
+print(len(a))
+
+#通过索引获取字符串
+print(a[0])#第一个
+print(a[-1])#最后一个a[len(a)-1]
+#布尔类型
+b1=True
+b2=False
+#空类型
+n=None
+
+print(type(n))
