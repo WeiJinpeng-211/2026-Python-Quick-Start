@@ -1,0 +1,10 @@
+mood=int(input("心情指数:"))
+time=int(input("还有几小时睡觉:))
+if mood>=60:
+  if time>10:
+    print("出门玩吧")
+    print("心情还不错")
+  elif time==0:
+    print("心情还不错睡觉吧！")
+else:
+  print("心情不怎么样“)
