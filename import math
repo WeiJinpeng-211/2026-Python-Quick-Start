@@ -1,0 +1,19 @@
+#首先，如果想要import math，千万不要把文件名变成math.py，否则会报错，
+#那么如果真的想要在math.py的文件名下import math该怎么办呢？
+这个错误是因为你的文件名称与 Python 标准库的 ”math“模块冲突了。当你的文件名是 “math.py“时，
+Python 会尝试导入你自己的文件，而不是标准库的 “math”模块。
+ **如果你暂时不想重命名文件**，但需要访问标准库的 math 模块，可以使用 importlib：
+  
+   import importlib
+   std_math = importlib.import_module('math', package=None)
+   print(std_math.log2(8))
+
+**推荐做法：**
+始终避免使用 Python 标准库模块的名称来命名自己的文件，包括：
+- `math.py`
+- `random.py`
+- `datetime.py`
+- `json.py`
+- `os.py`
+- `sys.py`
+- 以及其他标准库模块名
